@@ -1,4 +1,4 @@
-##Docker Swarm vs Kubernetes
+## Docker Swarm vs Kubernetes
 
 - Khi số lượng container tăng lên, việc quản lý, triển khai, scale trở nên phức tạp, không thể hì hục chạy bằng tay được thì chúng ta nhắc đến Docker Swarm hay Kubernetes, thực sự thì so sánh hai khái niệm này chưa hẳn chính xác bởi chúng không "ngồi chung một mâm" nhưng cơ bản thì như sau.
 
