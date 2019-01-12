@@ -24,7 +24,7 @@ Kiến trúc Docker Swarm bao gồm các "manager" và các "worker". Người d
 
 
 | <img src="/img/5.png"> | <img src="/img/6.png"> |
-|------------------------|------------------------|
+|:------------------------:|:------------------------:|
 |Application Definition| |
 |Ứng dụng có thể được triển khai sử dụng kết hợp các pods, deployments, and services. Một pod là một nhóm các container đồng nhất cùng vị trí và là đơn vị nhỏ nhất để triển khai. Deploysment có thể có nhiều bản sao trên nhiều node. Một service đại diện cho công việc container và tích hợp tới các DNS để round-robin yêu cầu gửi đến.|Ứng dụng có thể được triển khai dưới dạng services trong một Swarm cluster. Nhiều container sẽ được chỉ định bằng file YAML. Docker Compose có thể triển khai chúng. Task được phân phối qua các trung tâm dữ liệu qua việc sử dụng nhãn. Bạn có thể sử dụng nhiều tùy chọn vị trí để phân phối các task.|
 |Application Scalability Constructs | |
