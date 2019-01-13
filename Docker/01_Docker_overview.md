@@ -17,14 +17,14 @@ Docker nhanh chóng được cộng đồng CNTT đón nhận với tốc độ 
 <img src="/img/1.jpg">
 
 
-* Docker Engine: dùng để tạo ra Docker image và chạy Docker container.
+* Docker Engine: Dùng để tạo ra Docker image và chạy Docker container.
 
-* Docker Hub: dịch vụ lưu trữ giúp chứa các Docker image.
+* Docker Hub: Dịch vụ lưu trữ giúp chứa các Docker image.
 
-* Docker Machine: tạo ra các Docker engine trên máy chủ.
+* Docker Machine: Tạo ra các Docker engine trên máy chủ.
 
-* Docker Compose: chạy ứng dụng bằng cách định nghĩa cấu hình các Docker container thông qua tệp cấu hình
+* Docker Compose: Chạy ứng dụng bằng cách định nghĩa cấu hình các Docker container thông qua tệp cấu hình
 
-* Docker image: một dạng tập hợp các tệp của ứng dụng, được tạo ra bởi Docker engine. Nội dung của các Docker image sẽ không bị thay đổi khi di chuyển. Docker image được dùng để chạy các Docker container.
+* Docker image: Một dạng tập hợp các tệp của ứng dụng, được tạo ra bởi Docker engine. Nội dung của các Docker image sẽ không bị thay đổi khi di chuyển. Docker image được dùng để chạy các Docker container.
 
-* Docker container: một dạng runtime của các Docker image, dùng để làm môi trường chạy ứng dụng.
+* Docker container: Một dạng runtime của các Docker image, dùng để làm môi trường chạy ứng dụng.
