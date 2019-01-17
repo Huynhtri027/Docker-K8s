@@ -7,19 +7,20 @@
 - Mỗi containers có một network stack: Có nghĩa là containers không có quyền truy cập vào sockets hoặc interfaces của container khác. Tuy nhiên, nếu hệ thống máy chủ được thiết lập phù hợp các container có thể tương tác với nhau thông qua network interfaces tương ứng giống như chúng có thể tương tác với server bên ngoài.
 
 * Từ Linux kernel 2.6.24 Linux hỗ trợ có 6 namespace:
+<ul>
 
-* Process ID : Cung cấp sự isolated  để phân bổ các process identifiers  (PID), danh sách các process và chi tiết của chúng. Mặc dù các namespaces mới được isolated với các namespace khác, các process trong namespaces mới vẫn thấy tất cả các process mặc dù các PID khác nhau.
+- Process ID : Cung cấp sự isolated  để phân bổ các process identifiers  (PID), danh sách các process và chi tiết của chúng. Mặc dù các namespaces mới được isolated với các namespace khác, các process trong namespaces mới vẫn thấy tất cả các process mặc dù các PID khác nhau.
 
-* IPC (Inter process communication): Namespace cô lập các System V inter-process với các namespace khác.
+- IPC (Inter process communication): Namespace cô lập các System V inter-process với các namespace khác.
 
-* User (currently experimental support for): Namespace cô lập user IDs với các namespace khác.
+- User (currently experimental support for): Namespace cô lập user IDs với các namespace khác.
 
-* UTS: Namespace chấp nhận thay đổi tên hostname
+- UTS: Namespace chấp nhận thay đổi tên hostname
 
-* Network : Cho phép cô lập môi trường mạng network trong một host. Namespace phân chia việc sử dụng các khác niệm liên quan tới network như devices, địa chỉ addresses, ports, định tuyến và các quy tắc tường lửa vào trong một hộp (box) riêng biệt, chủ yếu là ảo hóa mạng trong một máy chạy một kernel duy nhất.
+- Network : Cho phép cô lập môi trường mạng network trong một host. Namespace phân chia việc sử dụng các khác niệm liên quan tới network như devices, địa chỉ addresses, ports, định tuyến và các quy tắc tường lửa vào trong một hộp (box) riêng biệt, chủ yếu là ảo hóa mạng trong một máy chạy một kernel duy nhất.
 
-* Mount: Namespace cho phép tạo file system layout khác nhau, hoặc tạo các điểm truy cập read-only.
-
+- Mount: Namespace cho phép tạo file system layout khác nhau, hoặc tạo các điểm truy cập read-only.
+</ul>
 ```
 
        Namespace   Constant          Isolates
@@ -33,7 +34,7 @@
 ```
 Các process chạy inside namespaces chỉ tương tác được với các process bên trong namespace đó và không thể tương tác outside cũng như namespace khác (container khác).
 
-### Cgroup (Control groups)
+### 2.Cgroup (Control groups)
 
 - Cgroup là 1 thành phần quan trọng trong Linux Containers,cgroup thực hiện tính toán tài nguyên và giới hạn sử dụng. Cgroup cung cấp nhiều số liệu metric hữu ích, đảm bảo mỗi containers đều được chia sẻ RAM,CPU,diskI/O và quan trọng hơn một container không thể làm giảm hiệu suất của hệ thống bằng cách sử dụng hết tài nguyên.
 
