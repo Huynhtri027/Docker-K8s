@@ -39,6 +39,19 @@ Các process chạy inside namespaces chỉ tương tác được với các pro
 
 ### 2.Cgroup (Control groups)
 
++ Common control groups
+
+
+* CPU
+
+* Memory
+
+* Network Bandwidth
+
+* Disk
+
+* Priority
+
 - Cgroup là 1 thành phần quan trọng trong Linux Containers,cgroup thực hiện tính toán tài nguyên và giới hạn sử dụng. Cgroup cung cấp nhiều số liệu metric hữu ích, đảm bảo mỗi containers đều được chia sẻ RAM,CPU,diskI/O và quan trọng hơn một container không thể làm giảm hiệu suất của hệ thống bằng cách sử dụng hết tài nguyên.
 
 - Vì vậy, trong khi chúng không đóng vai trò ngăn chặn một container truy cập hoặc ảnh hưởng đến dữ liệu và quy trình của một container khác, thì chúng rất cần thiết để chống lại một số cuộc tấn công từ chối dịch vụ. Chúng đặc biệt quan trọng trên các nền tảng nhiều người thuê, như PaaS công cộng và riêng tư, để đảm bảo thời gian hoạt động (và hiệu suất) nhất quán ngay cả khi một số ứng dụng bắt đầu hoạt động sai.
