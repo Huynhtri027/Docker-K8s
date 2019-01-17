@@ -1,4 +1,5 @@
 ## Namespaces , Cgroup
+<img src="/img/9.png">
 
 ### 1. Namespaces
 
