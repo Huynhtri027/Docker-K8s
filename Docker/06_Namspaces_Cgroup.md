@@ -21,7 +21,8 @@
 
 - Mount: Namespace cho phép tạo file system layout khác nhau, hoặc tạo các điểm truy cập read-only.
 </ul>
-```
+
+``` sh
 
        Namespace   Constant          Isolates
        Cgroup      CLONE_NEWCGROUP   Cgroup root directory
@@ -32,6 +33,7 @@
        User        CLONE_NEWUSER     User and group IDs
        UTS         CLONE_NEWUTS      Hostname and NIS domain name
 ```
+
 Các process chạy inside namespaces chỉ tương tác được với các process bên trong namespace đó và không thể tương tác outside cũng như namespace khác (container khác).
 
 ### 2.Cgroup (Control groups)
