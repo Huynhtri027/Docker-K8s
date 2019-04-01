@@ -16,7 +16,7 @@ Before you install Docker CE for the first time on a new host machine, you need 
 
 `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
 
-## 1.Install docker-ce:
+## 1. Install docker-ce:
 
 `yum install docker-ce -y`
 
@@ -46,7 +46,7 @@ You can disable the nightly or test repository by running the yum-config-manager
 
 `yum-config-manager --disable docker-ce-nightly`
 
-## 2.Install Docker Compose
+## 2. Install Docker Compose
 
 * Install Extra Packages for Enterprise Linux
 
