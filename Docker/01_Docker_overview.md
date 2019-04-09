@@ -1,5 +1,13 @@
 ## Docker
 
+Docker là gì?
+
+Docker là một open platform cung cấp cho người sử dụng những công cụ và service để người sử dụng có thể đóng gói và chạy chương trình của mình trên các môi trường khác nhau một cách nhanh nhất. Docker bao gồm:
+
+* Docker Engine: Chứa các tool, engine để có thể đóng gói chương trình và vận hành chúng một cách đơn giản nhất.
+
+* Docker Hub: Giống như Github, là nơi bạn có thể lưu trữ các chương trình đã được đóng gói (image) của mình và quản lý các image.
+
 Docker ra đời 2013. Nó được kỹ sư trẻ Solomon Hykes người Pháp lập trình bằng Golang, một ngôn ngữ được Google giới thiệu năm 2009.
 
 Docker nhanh chóng được cộng đồng CNTT đón nhận với tốc độ chóng mặt. Docker là phương thức, công cụ, hạ tầng để hiện thực hoá xây dựng Microservice, triển khai ứng dụng lên điện toán đám mây nhanh, gọn, tự động, chính xác. Docker có nhiều ưu điểm so với công nghệ ảo hoá, Virtualization:
